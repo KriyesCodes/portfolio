@@ -10,34 +10,20 @@
 	--primary-text-color: #f6f7f0;
 	--main-background-color: #bff4ff;
 	--secondary-background-color: #a3d5ff;
-	--tertiary-background-color: #9cb2fd;
+	/* --tertiary-background-color: #9cb2fd; */
+	--tertiary-background-color: #49abd9;
 }
 
 body {
-	background-color: lightcyan;
+	background-color: var(--main-background-color);
+	color: var(--primary-text-color);
 }
 
 header {
-	background-color: lightblue;
+	background-color: var(--secondary-background-color);
 }
 
 .page-container {
 	display: flex;
 	flex-direction: row;
-}
-
-.header-content-container {
-	display: grid;
-	grid-template-columns: 1fr 10fr 1fr;
-}
-
-.nav-menu > ul {
-	list-style-type: none;
-	display: flex;
-	justify-content: space-around;
-}
-
-.nav-menu > ul > li > a {
-	color: black;
-	text-decoration: none;
 }
