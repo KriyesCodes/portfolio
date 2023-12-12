@@ -6,12 +6,24 @@
 	box-sizing: border-box;
 }
 
+:root {
+	--primary-text-color: #f6f7f0;
+	--main-background-color: #bff4ff;
+	--secondary-background-color: #a3d5ff;
+	--tertiary-background-color: #9cb2fd;
+}
+
 body {
 	background-color: lightcyan;
 }
 
 header {
 	background-color: lightblue;
+}
+
+.page-container {
+	display: flex;
+	flex-direction: row;
 }
 
 .header-content-container {
