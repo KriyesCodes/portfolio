@@ -1,0 +1,8 @@
+.main-page-content {
+	padding-left: 2rem;
+}
+
+.page-section {
+	background-color: var(--secondary-background-color);
+	margin-bottom: 2rem;
+}
