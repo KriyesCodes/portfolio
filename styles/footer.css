@@ -1,0 +1,35 @@
+form {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	height: 70%;
+}
+
+textarea {
+	pointer-events: all;
+	resize: none;
+
+	background: var(--secondary-background-color);
+	box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.1);
+	backdrop-filter: blur(3px);
+	-webkit-backdrop-filter: blur(10px);
+	border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+textarea:focus {
+	border: 1px solid black;
+}
+
+button {
+	font-family: "Hardpixel";
+}
+
+.send-button {
+	width: 10%;
+	margin-top: 1rem;
+}
+
+.when-section {
+	height: 400px;
+}

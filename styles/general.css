@@ -8,22 +8,100 @@
 
 :root {
 	--primary-text-color: #f6f7f0;
-	--main-background-color: #bff4ff;
+	--secondary-text-color: #000000;
+	--primary-background-color: #bff4ff;
 	--secondary-background-color: #a3d5ff;
-	/* --tertiary-background-color: #9cb2fd; */
+	--tertiary-background-color: #9cb2fd;
 	--tertiary-background-color: #49abd9;
 }
 
+@font-face {
+	font-family: "Blockletter";
+	src: url("../fonts/Blockletter.woff2") format("woff2"),
+		url("../fonts/Blockletter.woff") format("woff"),
+		url("../fonts/Blockletter.ttf") format("truetype");
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Press Start 2P";
+	src: url("../fonts/PressStart2P-Regular.woff2") format("woff2"),
+		url("../fonts/PressStart2P-Regular.woff") format("woff"),
+		url("../fonts/PressStart2P-Regular.ttf") format("truetype");
+	font-weight: 500;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Hardpixel";
+	src: url("../fonts/Hardpixel.woff2") format("woff2"),
+		url("../fonts/Hardpixel.woff") format("woff"),
+		url("../fonts/Hardpixel.ttf") format("truetype");
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
 body {
-	background-color: var(--main-background-color);
-	color: var(--primary-text-color);
+	background-color: var(--secondary-background-color-translucent);
+	color: var(--secondary-text-color);
+	font-family: "Hardpixel";
+}
+
+h1,
+h2,
+h3 {
+	font-family: "Blockletter";
 }
 
 header {
-	background-color: var(--secondary-background-color);
+	background-color: var(--primary-background-color);
 }
 
 .page-container {
+	pointer-events: none;
+	visibility: visible;
 	display: flex;
 	flex-direction: row;
+}
+
+#canvas1 {
+	position: fixed;
+	z-index: -1;
+	width: 100vw;
+	height: 100vh;
+	top: 0;
+	left: 0;
+	background-color: #fff;
+}
+
+.link {
+	pointer-events: all;
+	color: inherit;
+	text-decoration: none;
+	/* background-color: var(--tertiary-background-color); */
+	font-size: 2rem;
+	padding: 0.5rem 1rem;
+	width: 100%;
+
+	background: rgba(255, 255, 255, 0.35);
+	box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.1);
+	backdrop-filter: blur(3px);
+	-webkit-backdrop-filter: blur(10px);
+	border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.link:hover {
+	color: var(--primary-text-color);
+	background: rgba(0, 0, 0, 1);
+	box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.8);
+}
+
+img {
+	width: 300px;
+	aspect-ratio: 1;
+	object-fit: cover;
 }

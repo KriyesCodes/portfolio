@@ -6,98 +6,164 @@
 		<link rel="stylesheet" href="styles/general.css" />
 		<link rel="stylesheet" href="styles/header.css" />
 		<link rel="stylesheet" href="styles/main.css" />
+		<link rel="stylesheet" href="styles/footer.css" />
+		<script type="module" src="scripts/themeChanger.js"></script>
+		<script type="module" src="scripts/background.js"></script>
+		<script src="scripts/script.js"></script>
 		<title>Kriyes Mahendra</title>
 	</head>
 	<body>
+		<canvas id="canvas1"></canvas>
 		<div class="page-container">
 			<header>
-				<div class="header-content-container">
-					<div class="theme-toggle">
+				<div class="header-content-container header-content-container--glass">
+					<!-- <div class="theme-toggle">
 						<input type="checkbox" />
-					</div>
+					</div> -->
 					<nav>
 						<div class="nav-menu">
 							<ul>
-								<li><a href="#">About</a></li>
-								<li><a href="#">Projects</a></li>
-								<li><a href="#">Contact</a></li>
+								<li><a href="#about" class="link">About</a></li>
+								<li><a href="#projects" class="link">Projects</a></li>
+								<li><a href="#contact" class="link">Contact</a></li>
 							</ul>
 						</div>
 					</nav>
-					<div class="socials"></div>
+					<!-- <div class="socials"></div> -->
 				</div>
 			</header>
 			<div class="main-page-content">
 				<body>
-					<div class="who-section page-section">
+					<div id="about" class="who-section page-section page-section--glass">
 						<h1>KRIYES MAHENDRA</h1>
 						<h2>
-							<span class="professional-title">? ? ?</span>
+							<span class="professional-title">FRONT END</span>
 							<br />
 							<span>DEVELOPER</span>
 						</h2>
 					</div>
-					<div class="why-section page-section">
+					<div class="why-section page-section page-section--glass">
 						<div>
 							<p>
-								Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-								Laboriosam non porro blanditiis, debitis exercitationem nostrum
-								ad molestias, eveniet temporibus recusandae et velit sint! Quas
-								deleniti, natus porro labore qui maxime doloribus atque rem,
-								distinctio accusamus similique eos, obcaecati consequatur
-								repellendus. Architecto excepturi ad eum quasi nihil expedita,
-								illo eligendi quas.
+								Welcome to my corner of the internet! I am a front-end developer
+								that transforms websites into elegant experiences without
+								sacrificing performance.
 							</p>
 						</div>
 					</div>
-					<div class="what-section page-section">
+					<div
+						id="projects"
+						class="what-section page-section page-section--glass"
+					>
 						<h2>PROJECTS</h2>
 						<div class="projects-container">
 							<div class="project">
-								<h3>PROJECT 1</h3>
+								<h3>Hangman</h3>
 								<div class="project-info">
 									<div class="project-image-container">
 										<img
 											class="project__image"
-											src="https://placehold.co/300"
+											src="images/hangman.png"
 											alt="placeholder image"
 										/>
 									</div>
-									<div class="github-link-container"></div>
-									<div class="project-description-container">
-										<p>
-											Lorem ipsum dolor sit amet consectetur adipisicing elit.
-											Reiciendis animi placeat eaque dolore at obcaecati cum? Ad
-											repellendus sequi blanditiis minima deleniti molestias,
-											nobis error consequatur obcaecati quos aperiam esse?
-										</p>
+									<div class="github-link-container">
+										<a
+											href="https://github.com/KriyesCodes/hangman"
+											class="link"
+											target="_blank"
+											>GITHUB</a
+										>
 									</div>
 									<div class="live-link-container">
-										<a href="#">LIVE</a>
+										<a
+											href="https://kriyescodes.github.io/hangman/"
+											class="link"
+											target="_blank"
+											>LIVE</a
+										>
+									</div>
+									<div class="project-description-container">
+										<p>
+											The aim of this project was to practice using the document
+											object model. I dynamically generated some elements and
+											used event listeners to alter the state of the game such
+											as switching between game screens or changing the game
+											mode (functionality) of the game dynamically.
+										</p>
 									</div>
 								</div>
 							</div>
 							<div class="project">
-								<h3>PROJECT 2</h3>
+								<h3>Pulse Clone</h3>
 								<div class="project-info">
 									<div class="project-image-container">
 										<img
 											class="project__image"
-											src="https://placehold.co/300"
+											src="images/pulse-logo.png"
 											alt="placeholder image"
 										/>
 									</div>
-									<div class="github-link-container"></div>
-									<div class="project-description-container">
-										<p>
-											Lorem ipsum dolor sit amet consectetur adipisicing elit.
-											Reiciendis animi placeat eaque dolore at obcaecati cum? Ad
-											repellendus sequi blanditiis minima deleniti molestias,
-											nobis error consequatur obcaecati quos aperiam esse?
-										</p>
+									<div class="github-link-container">
+										<a
+											href="https://github.com/KriyesCodes/pulse-pricing-page"
+											class="link"
+											target="_blank"
+											>GITHUB</a
+										>
 									</div>
 									<div class="live-link-container">
-										<a href="#">LIVE</a>
+										<a
+											href="https://kriyescodes.github.io/pulse-pricing-page/"
+											class="link"
+											target="_blank"
+											>LIVE</a
+										>
+									</div>
+									<div class="project-description-container">
+										<p>
+											The aim of this project was to practice my new found html
+											and css knowledge. I used css flexbox to create dynamic
+											elements and broweser developer tools such as the
+											responsive design tool on Firefox to analyse breakpoints
+											for media queries to create a fully responsive replica.
+										</p>
+									</div>
+								</div>
+							</div>
+							<div class="project">
+								<h3>Film Flix</h3>
+								<div class="project-info">
+									<div class="project-image-container">
+										<img
+											class="project__image"
+											src="images/samuel-regan-asante-wMkaMXTJjlQ-unsplash.jpg"
+											alt="placeholder image"
+										/>
+									</div>
+									<div class="github-link-container">
+										<a
+											href="https://github.com/KriyesCodes/justit-bootcamp-week-11"
+											class="link"
+											target="_blank"
+											>GITHUB</a
+										>
+									</div>
+									<div class="live-link-container">
+										<a
+											href="https://replit.com/@kriye2003/FilmFlixPlus-App"
+											class="link"
+											target="_blank"
+											>LIVE</a
+										>
+									</div>
+									<div class="project-description-container">
+										<p>
+											This project is a terminal application made using python
+											and the sqlite3 database system. It employs CRUD
+											functionality and some dynamic string formatting for a
+											better user experience in the terminal.
+										</p>
 									</div>
 								</div>
 							</div>
@@ -105,7 +171,10 @@
 					</div>
 				</body>
 				<footer>
-					<div class="when-section page-section">
+					<div
+						id="contact"
+						class="when-section page-section page-section--glass"
+					>
 						<h2>CONTACT ME</h2>
 						<form action="" method="post">
 							<textarea
@@ -115,7 +184,7 @@
 								rows="10"
 								placeholder="Send me a message!"
 							></textarea>
-							<button type="submit">Send</button>
+							<button type="submit" class="link send-button">Send</button>
 						</form>
 					</div>
 				</footer>

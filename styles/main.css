@@ -1,8 +1,117 @@
 .main-page-content {
+	position: absolute;
+	left: 10vw;
 	padding-left: 2rem;
 }
 
 .page-section {
-	background-color: var(--secondary-background-color);
+	background-color: var(--primary-text-color);
+	margin: 0 5rem;
 	margin-bottom: 2rem;
+	border: 2px solid;
+	padding: 1rem;
+}
+
+.page-section--glass {
+	background: rgba(255, 255, 255, 0.35);
+	box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.1);
+	backdrop-filter: blur(3px);
+	-webkit-backdrop-filter: blur(10px);
+	border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.who-section {
+	margin-top: 2rem;
+}
+
+h1,
+h2 {
+	word-spacing: 10px;
+	letter-spacing: -1px;
+	text-align: center;
+}
+
+h1 {
+	font-size: 4rem;
+}
+
+h2 {
+	font-size: 3rem;
+}
+
+h3 {
+	font-size: 2.5rem;
+	text-decoration: underline;
+}
+
+p {
+	font-size: 1.5rem;
+}
+
+.why-section {
+	font-size: 1rem;
+	text-align: center;
+}
+
+.project {
+	background: rgba(255, 255, 255, 0.35);
+	box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.1);
+	backdrop-filter: blur(3px);
+	-webkit-backdrop-filter: blur(10px);
+	border: 1px solid rgba(255, 255, 255, 0.18);
+	margin: 2rem;
+	padding: 2rem 1rem;
+}
+
+.project:first-of-type {
+	margin-top: 1rem;
+}
+
+.project > h3 {
+	text-align: center;
+}
+
+.project-info {
+	display: grid;
+	grid-template-columns: repeat(7, 1fr);
+	gap: 10px;
+	grid-template-rows: repeat(5, 1fr);
+}
+
+.project-image-container {
+	grid-column: 1 / 4;
+	grid-row: 1 / 6;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.github-link-container {
+	grid-column: 4 / 5;
+	grid-row: 2 / 3;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.live-link-container {
+	grid-column: 4 / 5;
+	grid-row: 4 / 5;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.project-description-container {
+	grid-column: 5 / 8;
+	grid-row: 1 / 6;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	padding: 0 2rem;
 }
